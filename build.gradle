@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jogamp.org/deployment/maven"
+    }
+}
+
+dependencies {
+    implementation 'org.jogamp.java3d:java3d-core:1.6.0'
+    implementation 'org.jogamp.java3d:java3d-utils:1.6.0'
+    implementation 'org.jogamp.gluegen:gluegen-rt-main:2.3.2'
+    implementation 'org.jogamp.jogl:jogl-all-main:2.3.2'
+}
+
+application {
+    mainClass = 'RoomDashboard'
+}
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+run {
+    standardInput = System.in
+}
+
+Mouse Controls:
+- Left Mouse Button + Drag: Rotate the scene
+- Right Mouse Button + Drag: Zoom in/out
+- Middle Mouse Button + Drag: Pan the view 
+
+To export as image:
+1. Position the view as desired
+2. Click "Export as Image"
+3. Choose a location to save
+4. The file saves as PNG format 
+
+Additional Controls:
+- "Reset View" button: Returns to default camera position
+- Close window: Click X to return to 2D view 
