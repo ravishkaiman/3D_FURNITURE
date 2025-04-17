@@ -14,7 +14,7 @@ public class LoginPage extends JFrame {
 
     public LoginPage() {
         setTitle("FurnitureVision - Designer Login");
-        setSize(600, 400);  // Reduced window size
+        setSize(600, 400);  // Reduced window sizes
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
