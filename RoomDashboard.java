@@ -22,7 +22,7 @@ import javafx.scene.shape.*;
 import javafx.scene.transform.*;
 
 public class RoomDashboard extends JFrame {
-    // Color constants
+    // Color constant
     private static final Map<String, Color> WARM_COLORS = new HashMap<>() {{
         put("Coral", new Color(0xFF6F61));
         put("Rust", new Color(0xD75C37));
