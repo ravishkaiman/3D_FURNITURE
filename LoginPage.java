@@ -19,7 +19,7 @@ public class LoginPage extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
 
-        // Create the main panel with BorderLayout
+        // Create the main panel with Border
         JPanel mainPanel = new JPanel(new BorderLayout());
         
         // Left branding panel
